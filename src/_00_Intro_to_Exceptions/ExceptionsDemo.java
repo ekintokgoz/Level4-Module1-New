@@ -6,7 +6,7 @@ public class ExceptionsDemo {
      * Exceptions make it easier to debug or handle unexpected run time errors
      * when they arise in your programs.
      */
-
+	
     /*
      * The throws keyword in testFiveOrGreater lets the compiler know this
      * method could throw a method and needs a try catch block to handle it.
@@ -39,7 +39,12 @@ public class ExceptionsDemo {
     public static void main(String[] args) {
 
         // 1. Create a try/catch block (Hint: type "try" and ctrl + space).
-
+    	try {
+    		testFiveOrGreater(3);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+    	
         /*
          * 2. Call the testFiveOrGreater method with a value less than 5 inside
          * the try block.
@@ -63,7 +68,9 @@ public class ExceptionsDemo {
      * JOptionPane Message Dialog telling the user they have triggered a
      * critical error in their computer.
      */
-
+    
+    
+    
     /*
      * 7. Create a static method in this class called testPositive. It should
      * take a single number as a parameter and throw a NegativeNumberException
