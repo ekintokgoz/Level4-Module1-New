@@ -5,15 +5,17 @@ import java.awt.Graphics;
 public abstract class Polymorph {
     private int x;
     private int y;
-    private int WIDTH;
-    private int HEIGHT;
+    private int width;
+    private int height;
     
     public Polymorph(int x, int y, int width, int height){
    	 this.x = x;
    	 this.y = y;
-   	 this.WIDTH = width;
-   	 this.HEIGHT = height;
+   	 this.width = width;
+   	 this.height = height;
     }
+    
+
     
     public int getX() {
     	return x;
@@ -32,19 +34,19 @@ public abstract class Polymorph {
     }
     
     public int getWidth() {
-    	return WIDTH;
+    	return width;
     }
     
     public void setWidth(int width) {
-    	this.WIDTH = width;
+    	this.width = width;
     }
     
     public int getHeight() {
-    	return WIDTH;
+    	return height;
     }
     
     public void setHeight(int height) {
-    	this.HEIGHT = height;
+    	this.height = height;
     }
     
     
